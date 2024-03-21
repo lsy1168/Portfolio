@@ -1,11 +1,9 @@
 @charset "utf-8";
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
-@import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+@import url(./fonts/fonts.css);
+/* http://meyerweb.com/eric/tools/css/reset/
+ v2.0 | 20110126
+ License: none (public domain)
 */
-
 html,
 body,
 div,
@@ -133,9 +131,12 @@ table {
 /* common */
 body,
 * {
-  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-family: "dream", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 /* font-weight:100,300,500,700 */
 a {
+  font-family: "dream";
   text-decoration: none;
 }
