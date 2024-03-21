@@ -21,3 +21,38 @@ rects.forEach((el) => {
   });
   tm.to(el, { "--p": tg }, 0);
 });
+
+/* 프로젝트 스크롤 */
+
+const pc = document.querySelector(".sec4 .pc");
+const left = document.querySelector(".sec4 .left");
+const mobile = document.querySelector(".sec4 .mobile");
+const pcS = pc.querySelector(".screen");
+const pcM = pc.querySelector(".mask");
+const mobileS = mobile.querySelector(".screen");
+const mobileM = mobile.querySelector(".mask");
+//up
+const aniUp = (mask, screen) => {
+  let newH1 = mask.clientHeight;
+  let newH2 = screen.clientHeight;
+  let height = newH1 - newH2;
+  gsap.to(screen, { y: height, duration: 0.5 });
+};
+//down
+const aniDown = (screen) => {
+  gsap.to(screen, { y: 0, duration: 0.5 });
+};
+ScrollTrigger.create({
+  trigger: ".sec4",
+  start: "top bottom",
+  end: "bottom top",
+  markers: true,
+  scrub: 0.5,
+  onEnter: () => {
+    pcM.addEventListener("mouseenter", () => aniUp(pcM, pcS));
+    pcM.addEventListener("mouseleave", () => aniDown(pcS));
+    mobileM.addEventListener("mouseenter", () => aniUp(mobileM, mobileS));
+    mobileM.addEventListener("mouseleave", () => aniDown(mobileS));
+    gsap.fromTo(left, { xPercent: -100 }, { xPercent: 0, duration: 1 });
+  },
+});

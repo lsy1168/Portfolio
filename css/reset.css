@@ -128,6 +128,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.pa {position: absolute; }
+.pr {position: relative; }
+.df {display: flex; }
+.dg {display: grid; }
+.db {display: block; }
+.dib {display: inline-block; }
+
+html {font-size: 67.5%;}
 /* common */
 body,
 * {

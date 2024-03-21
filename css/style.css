@@ -1,4 +1,5 @@
 @charset "utf-8";
+/* @import url(https://qwerewqwerew.github.io/source/style/reset.css); */
 /* 공통 */
 @font-face {
   font-family: "TT";
@@ -37,6 +38,7 @@
 }
 .btn {
   font-weight: bold;
+  font-size: var(--n16);
   position: relative;
   padding: 20px 30px;
   border-radius: 50px;
@@ -235,6 +237,7 @@ section {
   font-weight: 500;
   margin-top: var(--n16);
   letter-spacing: -.5px;
+  font-size: var(--n16);
 }
 /* 1 */
 .section1 {
@@ -683,8 +686,94 @@ section {
 /* //섹션3 */
 /* 섹션4 */
 .section4 {
+    margin-top: 50px;
   width: 1700px;
   height: 1100px;
+}
+.sec4_box{
+    display: flex;
+}
+.sec4 .left {
+	width: 50%;
+	height: 100%;
+}
+
+.mockup.pc {
+	width: 100%;
+	height: min(30rem, 100%);
+	z-index: 3;
+}
+.mockup.mobile {
+	width: min(25rem, 100%);
+	left: 65%;
+	height: 30rem;
+	z-index: 4;
+}
+.mockup.pc .mask {
+	background-color: red;
+	width: calc(100% - 80px);
+	left: 40px;
+	top: 40px;
+	height: 40rem;
+	z-index: 999999;
+	overflow: hidden;
+}
+.mockup.mobile .mask {
+	width: 22.5rem;
+	height: 38.5rem;
+	left: 1.4rem;
+	top: 4rem;
+	z-index: 999999;
+	overflow: hidden;
+	border-radius: 1.6rem;
+}
+
+.left .screen {
+	width: 100%;
+}
+.left .device {
+	width: 100%;
+}
+.right_flex{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.right{
+    margin-top: 50px;
+    margin-left: 200px;
+    width: 70%;
+height: 450px;
+border-radius: 50px;
+border: 5px solid #481BDD;
+box-shadow: -20px 30px 4px 0px #cfcdcd;
+}
+.right p{
+    margin: auto;
+    width: 400px;
+    color: #000;
+font-family: "TT";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+color: #000;
+text-align :center;
+padding : 100px 0;
+}
+.right_boxs{
+    margin-top: 50px;
+    margin-left: 200px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.right_box{
+    width: 111px;
+height: 104px;
+flex-shrink: 0;
+border-radius: 20px;
+background: #4219DC;
 }
 /* //섹션4 */
 /* 푸터 */
