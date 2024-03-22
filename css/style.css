@@ -135,19 +135,26 @@ header:after {
   box-shadow: -87px 28px 0px 88px rgba(237, 237, 237, 1);
 }
 .header_gnb {
+  width: 100%;
   display: flex;
+  position: fixed;
+  top: 0;
+  right: 1px;
+  flex-direction: row;
+    justify-content: space-between;
+    background: rgba(41, 27, 131, 0.7);
 }
 /* 헤더 */
 .logo img {
-  margin-top: 40px;
+  margin-top: 10px;
   width: 150px;
   height: 60px;
   margin-left: 150px;
 }
 .gnb {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-right: 150px;
-  width: 85%;
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -157,7 +164,7 @@ header:after {
   width: 100px;
   font-size: 20px;
   width: 100px;
-  height: 80px;
+  height: 50px;
   text-align: center;
 }
 .dep1 a {
