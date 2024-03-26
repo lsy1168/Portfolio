@@ -1,3 +1,52 @@
+(() => {
+	const navContainer = document.querySelector('.header_gnb');
+	const btnsMenu = document.querySelector('.gnb');
+
+
+	document.addEventListener('scroll', function () {
+		console.log(window.scrollY);
+		if (window.scrollY > 60) {
+			navContainer.classList.add('bg_show');
+		} else {
+			navContainer.classList.remove('bg_show');
+		}
+	});
+	//e: 이벤트객체
+	btnsMenu.addEventListener('click', function (e) {
+    e.preventDefault();
+		const target = e.target;
+    console.log(target);
+		const link = target.dataset.link;
+		if (link == null) {
+			return;
+		}
+		const scrollTo = document.querySelector(link);
+		scrollTo.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		btnsMenu.classList.remove('open');
+	});
+})();
+
+/***
+ * arrow up
+ */
+(() => {
+	const arrowUp = document.querySelector('.arrow-up');
+	const home = document.querySelector('#home');
+	document.addEventListener('scroll', function () {
+		console.log(window.scrollY);
+		if (window.scrollY > 500) {
+			arrowUp.classList.add('visible');
+		} else {
+			arrowUp.classList.remove('visible');
+		}
+	});
+	arrowUp.addEventListener('click', function () {
+		home.scrollIntoView({ behavior: 'smooth' });
+	});
+})();
+
+
+/* 스킬바 */
 const rects = document.querySelectorAll(".rect"); /* 게이지바 */
 rects.forEach((el) => {
   const counter = el.querySelector(".num"); /* 숫자카운터 */
@@ -57,7 +106,7 @@ ScrollTrigger.create({
   },
 });
 
-/* 마우스효고 */
+/* 마우스효과 */
 const el = document.querySelector(".followAnimation");
 //마우스 좌표
 let mouseX = 0;
@@ -104,4 +153,3 @@ window.onscroll = function () {
     sec2Title.style.transform = "translate(100%, 0)";
   }
 };
-
