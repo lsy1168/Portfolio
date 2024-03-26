@@ -56,3 +56,52 @@ ScrollTrigger.create({
     gsap.fromTo(left, { xPercent: -100 }, { xPercent: 0, duration: 1 });
   },
 });
+
+/* 마우스효고 */
+const el = document.querySelector(".followAnimation");
+//마우스 좌표
+let mouseX = 0;
+let mouseY = 0;
+//요소좌표
+let currentX = 0;
+let currentY = 0;
+//브라우저의 마우스 좌표값얻기
+document.addEventListener("mousemove", (e) => {
+  console.log(e);
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+  console.log(mouseX, mouseY);
+});
+tick();
+function tick() {
+  requestAnimationFrame(tick);
+  currentX += (mouseX - currentX) * 0.1;
+  currentY += (mouseY - currentY) * 0.1;
+  el.style.transform = `translate(${currentX}px, ${currentY}px)`;
+  /* el.style.left = currentX+"px";
+el.style.top = currentY+"px"; */
+}
+/* transform:translate(-50%,-50%) */
+
+/* 프로필 효과 */
+window.onscroll = function () {
+  let height = window.pageYOffset; //스크롤 높이
+  const sec1Title = document.querySelector(".section1_left_top img"); //변수
+  const sec2Title = document.querySelector(".section1_right"); //변수
+
+  if (height >= 700) {
+    sec1Title.style.opacity = 1;
+    sec1Title.style.transform = "translate(0, 0)";
+  } else {
+    sec1Title.style.opacity = 0;
+    sec1Title.style.transform = "translate(-100%, 0)";
+  }
+  if (height >= 700) {
+    sec2Title.style.opacity = 1;
+    sec2Title.style.transform = "translate(0, 0)";
+  } else {
+    sec2Title.style.opacity = 0;
+    sec2Title.style.transform = "translate(100%, 0)";
+  }
+};
+
