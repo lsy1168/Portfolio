@@ -94,34 +94,6 @@
   will-change: transform;
   transform: translate(0, 0);
 }
-.followAnimation2 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  font-size: 5rem;
-  /* css 애니메이션 적용시 성능개선 */
-  will-change: transform;
-  transform: translate(0, 0);
-
-}.followAnimation3 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  font-size: 5rem;
-  /* css 애니메이션 적용시 성능개선 */
-  will-change: transform;
-  transform: translate(0, 0);
-
-}.followAnimation4 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  font-size: 5rem;
-  /* css 애니메이션 적용시 성능개선 */
-  will-change: transform;
-  transform: translate(0, 0);
-
-}
 /* 레이아웃 */
 html,
 body {
@@ -303,6 +275,7 @@ section {
   display: flex;
   justify-content: space-between;
   gap: var(--n56);
+  overflow: hidden;
 }
 .section1 > div {
   width: 50%;
@@ -426,8 +399,9 @@ section {
 /* 섹션2  */
 
 .section2{
-  margin-top: 100px;
+  margin-top: 200px;
   height: 1500px;
+  overflow: hidden;
 }
 .marquee{
   display: inline-flex;
@@ -531,9 +505,13 @@ to {
   font-size: 2.4vw;
   font-weight: 600;
 }
+.box1,.box2{
+  transition: all 0.5s ease 0s;
+}
 /* 섹션3 */
 .section3 {
-  padding-top: 120px;
+  padding-top: 200px;
+  overflow: hidden;
 }
 .section3_top {
   width: 100%;

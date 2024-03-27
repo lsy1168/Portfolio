@@ -132,11 +132,13 @@ el.style.top = currentY+"px"; */
 }
 /* transform:translate(-50%,-50%) */
 
-/* 프로필 효과 */
+/* 프로필 효과 */ /* Education 효과 */
 window.onscroll = function () {
   let height = window.pageYOffset; //스크롤 높이
   const sec1Title = document.querySelector(".section1_left_top img"); //변수
   const sec2Title = document.querySelector(".section1_right"); //변수
+  const sec3Title = document.querySelector(".box1"); //변수
+  const sec4Title = document.querySelector(".box2"); //변수
 
   if (height >= 700) {
     sec1Title.style.opacity = 1;
@@ -152,4 +154,41 @@ window.onscroll = function () {
     sec2Title.style.opacity = 0;
     sec2Title.style.transform = "translate(100%, 0)";
   }
+  if (height >= 2600) {
+    sec3Title.style.opacity = 1;
+    sec3Title.style.transform = "translate(0, 0)";
+  } else {
+    sec3Title.style.opacity = 0;
+    sec3Title.style.transform = "translate(-100%, 0)";
+  }
+  if (height >= 2600) {
+    sec4Title.style.opacity = 1;
+    sec4Title.style.transform = "translate(0, 0)";
+  } else {
+    sec4Title.style.opacity = 0;
+    sec4Title.style.transform = "translate(100%, 0)";
+  }
 };
+
+/* Education 효과 */
+/* 
+window.onscroll = function () {
+  let heights = window.pageYOffset; //스크롤 높이
+  const sec3Title = document.querySelector(".box1"); //변수
+  const sec4Title = document.querySelector(".box2"); //변수
+
+  if (heights >= 2600) {
+    sec3Title.style.opacity = 1;
+    sec3Title.style.transform = "translate(0, 0)";
+  } else {
+    sec3Title.style.opacity = 0;
+    sec3Title.style.transform = "translate(-100%, 0)";
+  }
+  if (heights >= 2600) {
+    sec4Title.style.opacity = 1;
+    sec4Title.style.transform = "translate(0, 0)";
+  } else {
+    sec4Title.style.opacity = 0;
+    sec4Title.style.transform = "translate(100%, 0)";
+  }
+}; */
