@@ -128,7 +128,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.pa {position: absolute; }
+/* .pa {position: absolute; } */
 .pr {position: relative; }
 .df {display: flex; }
 .dg {display: grid; }

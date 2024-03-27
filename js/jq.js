@@ -1,4 +1,4 @@
-const pics = $('.pic');
+/* const pics = $('.pic');
 console.log(pics);
 const lightbox = $('#lightbox');
 const lightboxImage = $('#lightboxImage');
@@ -12,4 +12,4 @@ pics.on('click', function (e) {
 lightbox.on('click',function(){
  lightbox.css('display', 'none');
  $('html').removeClass('all_scroll_fixed');
-})
+}) */

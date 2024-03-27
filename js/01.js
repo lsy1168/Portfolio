@@ -75,11 +75,11 @@ rects.forEach((el) => {
 
 const pc = document.querySelector(".sec4 .pc");
 const left = document.querySelector(".sec4 .left");
-const mobile = document.querySelector(".sec4 .mobile");
+/* const mobile = document.querySelector(".sec4 .mobile"); */
 const pcS = pc.querySelector(".screen");
 const pcM = pc.querySelector(".mask");
-const mobileS = mobile.querySelector(".screen");
-const mobileM = mobile.querySelector(".mask");
+/* const mobileS = mobile.querySelector(".screen");
+const mobileM = mobile.querySelector(".mask"); */
 //up
 const aniUp = (mask, screen) => {
   let newH1 = mask.clientHeight;
@@ -92,7 +92,7 @@ const aniDown = (screen) => {
   gsap.to(screen, { y: 0, duration: 0.5 });
 };
 ScrollTrigger.create({
-  trigger: ".sec4",
+  trigger: ".left",
   start: "top bottom",
   end: "bottom top",
   markers: true,
@@ -100,9 +100,9 @@ ScrollTrigger.create({
   onEnter: () => {
     pcM.addEventListener("mouseenter", () => aniUp(pcM, pcS));
     pcM.addEventListener("mouseleave", () => aniDown(pcS));
-    mobileM.addEventListener("mouseenter", () => aniUp(mobileM, mobileS));
-    mobileM.addEventListener("mouseleave", () => aniDown(mobileS));
-    gsap.fromTo(left, { xPercent: -100 }, { xPercent: 0, duration: 1 });
+   /*  mobileM.addEventListener("mouseenter", () => aniUp(mobileM, mobileS));
+    mobileM.addEventListener("mouseleave", () => aniDown(mobileS)); */
+    gsap.fromTo(left, { yPercent: 100 }, { yPercent: 0, duration: 1 });
   },
 });
 
@@ -139,6 +139,7 @@ window.onscroll = function () {
   const sec2Title = document.querySelector(".section1_right"); //변수
   const sec3Title = document.querySelector(".box1"); //변수
   const sec4Title = document.querySelector(".box2"); //변수
+
 
   if (height >= 700) {
     sec1Title.style.opacity = 1;
