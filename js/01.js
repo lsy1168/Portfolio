@@ -1,4 +1,6 @@
-/* gnb 이동효과*/
+
+
+/* 스크롤 네비 */
 (() => {
 	const navContainer = document.querySelector('.header_gnb');
 	const btnsMenu = document.querySelector('.gnb');
@@ -27,10 +29,7 @@
 	});
 })();
 
-
-/***
- * arrow up
- */
+/* 스크롤네비 홈. 버튼 */
 (() => {
 	const arrowUp = document.querySelector('.arrow-up');
 	const home = document.querySelector('#home');

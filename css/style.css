@@ -49,7 +49,7 @@
   position: relative;
   padding: 1vw 2vw;
   border-radius: 50px;
-  animation: btn 0.2s infinite ease-in-out;
+/*   animation: btn 0.2s infinite ease-in-out; */
 }
 @keyframes btn {
   0% {
@@ -166,6 +166,7 @@ header:after {
 }
 .header_gnb {
   width: 40%;
+  transition: 0.3s;
   height: 5vw;
   display: flex;
   position: fixed;
