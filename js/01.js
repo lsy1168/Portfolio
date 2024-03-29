@@ -1,3 +1,4 @@
+/*  */
 (() => {
 	const navContainer = document.querySelector('.header_gnb');
 	const btnsMenu = document.querySelector('.gnb');
@@ -25,6 +26,7 @@
 		btnsMenu.classList.remove('open');
 	});
 })();
+
 
 /***
  * arrow up
@@ -143,7 +145,7 @@ window.onscroll = function () {
 
   if (height >= 700) {
     sec1Title.style.opacity = 1;
-    sec1Title.style.transform = "translate(0, 0)";
+    sec1Title.style.transform = "translate(25%, 0)";
   } else {
     sec1Title.style.opacity = 0;
     sec1Title.style.transform = "translate(-100%, 0)";
@@ -155,14 +157,14 @@ window.onscroll = function () {
     sec2Title.style.opacity = 0;
     sec2Title.style.transform = "translate(100%, 0)";
   }
-  if (height >= 2600) {
+  if (height >= 1800) {
     sec3Title.style.opacity = 1;
     sec3Title.style.transform = "translate(0, 0)";
   } else {
     sec3Title.style.opacity = 0;
     sec3Title.style.transform = "translate(-100%, 0)";
   }
-  if (height >= 2600) {
+  if (height >= 1800) {
     sec4Title.style.opacity = 1;
     sec4Title.style.transform = "translate(0, 0)";
   } else {
@@ -170,6 +172,14 @@ window.onscroll = function () {
     sec4Title.style.transform = "translate(100%, 0)";
   }
 };
+
+const ani=bodymovin.loadAnimation({
+  container:document.querySelector('.logo1'),
+  renderer:'svg',/* 어떤형식인지 */
+  loop:true, /* 무한반복 */
+  autoplay:true, /* 자동재생 */
+  path:'/logo.json',
+})
 
 /* Education 효과 */
 /* 
