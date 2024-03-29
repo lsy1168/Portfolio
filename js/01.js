@@ -179,6 +179,7 @@ window.onscroll = function () {
     sec6Title.style.opacity = 0;
     sec6Title.style.transform = "translate(-100%, 0)";
   }
+  
 };
 
 const ani=bodymovin.loadAnimation({

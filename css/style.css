@@ -269,7 +269,7 @@ header:after {
 .sd:after {
   content: attr(data-shadow);
   position: absolute;
-  top: 20.9vw;
+  top: 21.5vw;
   left: 14.3vw;
   z-index: -1;
   text-shadow: none;
