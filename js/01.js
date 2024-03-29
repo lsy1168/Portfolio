@@ -133,6 +133,7 @@ window.onscroll = function () {
   const sec3Title = document.querySelector(".box1"); //변수     /* 섹션2 박스 */
   const sec4Title = document.querySelector(".box2"); //변수 /* 섹션2  박스 */
   const sec5Title = document.querySelector(".sec3_rbox"); //변수 /* 섹션3 R 텍스트박스 */
+  const sec6Title = document.querySelector(".sec4_Lbox"); //변수 /* 섹션4 L 텍스트박스 */
  
 
 
@@ -170,6 +171,13 @@ window.onscroll = function () {
   } else {
     sec5Title.style.opacity = 0;
     sec5Title.style.transform = "translate(100%, 0)";
+  }
+  if (height >= 4300) {
+    sec6Title.style.opacity = 1;
+    sec6Title.style.transform = "translate(0, 0)";
+  } else {
+    sec6Title.style.opacity = 0;
+    sec6Title.style.transform = "translate(-100%, 0)";
   }
 };
 
