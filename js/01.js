@@ -77,10 +77,6 @@ const pc = document.querySelector(".sec3_mockup");
 const left = document.querySelector(".sec3 .sec3_left");
 const pcS = pc.querySelector(".sec3_screen");
 const pcM = pc.querySelector(".sec3_mask");
-const pc2 = document.querySelector(".sec4_mockup");
-const right = document.querySelector(".sec4 .sec4_right");
-const pcS2 = pc.querySelector(".sec4_screen");
-const pcM2 = pc.querySelector(".sec4_mask");
 //up
 const aniUp = (mask, screen) => {
   let newH1 = mask.clientHeight;
@@ -88,17 +84,9 @@ const aniUp = (mask, screen) => {
   let height = newH1 - newH2;
   gsap.to(screen, { y: height, duration: 0.5 });
 };
-const aniUp2 = (mask, screen) => {
-  let newH3 = mask.clientHeight;
-  let newH4 = screen.clientHeight;
-  let height = newH3 - newH4;
-  gsap.to(screen, { y: height, duration: 0.5 });
-};
+
 //down
 const aniDown = (screen) => {
-  gsap.to(screen, { y: 0, duration: 0.5 });
-};
-const aniDown2 = (screen) => {
   gsap.to(screen, { y: 0, duration: 0.5 });
 };
 ScrollTrigger.create({
@@ -140,10 +128,12 @@ function tick() {
 /* 프로필 효과 */ /* Education 효과 */
 window.onscroll = function () {
   let height = window.pageYOffset; //스크롤 높이
-  const sec1Title = document.querySelector(".section1_left_top img"); //변수
-  const sec2Title = document.querySelector(".section1_right"); //변수
-  const sec3Title = document.querySelector(".box1"); //변수
-  const sec4Title = document.querySelector(".box2"); //변수
+  const sec1Title = document.querySelector(".section1_left_top img"); //변수 /* 섹션1 프로필이미지 */
+  const sec2Title = document.querySelector(".section1_right"); //변수   /* 섹션1 스킬바 */
+  const sec3Title = document.querySelector(".box1"); //변수     /* 섹션2 박스 */
+  const sec4Title = document.querySelector(".box2"); //변수 /* 섹션2  박스 */
+  const sec5Title = document.querySelector(".sec3_rbox"); //변수 /* 섹션3 R 텍스트박스 */
+ 
 
 
   if (height >= 700) {
@@ -173,6 +163,13 @@ window.onscroll = function () {
   } else {
     sec4Title.style.opacity = 0;
     sec4Title.style.transform = "translate(100%, 0)";
+  }
+  if (height >= 3300) {
+    sec5Title.style.opacity = 1;
+    sec5Title.style.transform = "translate(0, 0)";
+  } else {
+    sec5Title.style.opacity = 0;
+    sec5Title.style.transform = "translate(100%, 0)";
   }
 };
 

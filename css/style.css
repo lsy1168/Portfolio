@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* @import url(https://qwerewqwerew.github.io/source/style/reset.css); */
+@import url(https://qwerewqwerew.github.io/source/style/reset.css);
 /* 공통 */
 @font-face {
   font-family: "TT";
@@ -581,10 +581,10 @@ section {
   overflow: hidden;
   margin-top: 4vw;
   width: 100%;
+  height: 48vw;
 }
 .sec3_title{
   margin-left: 5vw;
-  padding-bottom: 2vw;
   font-size: 5vw;
   font-weight: 600;
   font-family: 'TT';
@@ -596,24 +596,33 @@ section {
   height: 39vw;
 }
 .sec3_left {
-  width: 48vw;
+  width: 55vw;
   height: 100%;
+  transition: left 1s ease-in-out;
+}
+
+.sec3_mockup img,
+.sec3_mockup .sec3_mask {
+  width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 .sec3_mockup {
-  width: 48vw;
+  width: 55vw;
   height: min(30rem, 100%);
   z-index: 3;
   height: 36vw;
-  border: 3px solid #8b35ee;
-  border-radius: 10px;
+  position: relative;
 }
 .sec3_mockup .sec3_mask {
-  background-color: rgb(255, 255, 255);
-  width: 48vw;
-  height: 36vw;
+  background-color: rgb(233, 3, 3);
+  width: 98%;
+  height: 38vw;
   z-index: 999999;
   overflow: hidden;
-  border-radius: 10px;
+  top: 4.5%;
+	left: 1.5%;
 }
 .sec3_screen {
   width: 100%;
@@ -622,25 +631,50 @@ section {
 /* 섹션3 오른쪽텍스트박스 */
 .sec3_right {
   width: 35%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+    justify-content: space-around;
+}
+.sec3_rnumber{
+  position: absolute;
+  color: rgba(183, 175, 191, 0.50);
+  font-size: 11vw;
+  font-weight: 700;
+  left: -6vw;
+  top: -4vw;
 }
 .sec3_rbox {
-  background: #8b35ee4a;
-  border-radius: 20px;
+  width: 50vw;
+  border-radius: 2.5vw;
   padding: 2.5vw;
+  position: absolute;
+  top: 7vw;
+  left: -8vw;
+  z-index: 5555;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.23) 0%, rgba(255, 255, 255, 0.23) 100%), linear-gradient(135deg, rgba(72, 27, 221, 0.37) 100%, rgba(131, 85, 235, 0.37) 55.9%, rgba(206, 159, 252, 0.37) 0%);
+  backdrop-filter: blur(20px);
+  transition: all 2s ease 0s;
+}
+.sec3rbox_tbox{
+  margin-left: 6vw;
+}
+.svt{
+  color: #9238F0;
+font-size: 0.7vw;
+font-weight: 900;
+text-transform: uppercase;
 }
 .sec3rbox_tbox .title {
   justify-content: space-between;
-  border-bottom: 1px solid;
 }
 .sec3rbox_tbox .title h2 {
   font-size: 2vw;
   font-family: "TT";
   margin-top: 1vw;
-  margin-bottom: 1vw;
 }
 .period {
   padding-top: 1.4vw;
-  border-bottom: 1px solid;
 }
 .period_left {
   margin-right: 1vw;
@@ -648,135 +682,123 @@ section {
 .period_left span {
   font-size: 1vw;
   font-style: normal;
-  color: #808080;
   display: flex;
   flex-direction: column;
   margin-bottom: 1.45vw;
 }
-.period_right p {
-  font-style: normal;
-  font-size: 1vw;
-  color: #404040;
-  margin-bottom: 1.45vw;
-}
-.period .period_right span {
-  font-style: normal;
-  font-size: 0.9vw;
-  color: #404040;
-  line-height: 1vw;
-  margin-bottom:  1.45vw;
-}
-.project1_explan .main_text {
-  margin-top: 1.45vw;
-}
-.sec3rbox_tbox .main_text p {
-  font-size: 1vw;
-  color: #404040;
-  font-style: normal;
-  line-height: 1.8vw;
-  margin-bottom: calc(var(--row) * 4);
+.sec3_Rbtnbox{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 /* //섹션3 오른쪽 */
 /* //섹션3 */
 
 /* 섹션4 */
-
-/* 섹션4 왼쪽 */
 .section4 {
   overflow: hidden;
   margin-top: 4vw;
   width: 100%;
+  height: 48vw;
 }
-.sec4_left {
-  width: 35%;
-}
-.sec4_Lbox {
-  background: #8b35ee4a;
-  border-radius: 20px;
-  padding: 2.5vw;
-}
-.sec4Lbox_tbox .title {
-  justify-content: space-between;
-  border-bottom: 1px solid;
-}
-.sec4Lbox_tbox .title h2 {
-  font-size: 2vw;
-  font-family: "TT";
-  margin-top: 1vw;
-  margin-bottom: 1vw;
-}
-/* .period {
-  padding-top: 1.4vw;
-  border-bottom: 1px solid;
-}
-.period_left {
-  margin-right: 1vw;
-}
-.period_left span {
-  font-size: 1vw;
-  font-family: "TT";
-  color: #808080;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.45vw;
-}
-.period_right p {
-  font-family: "TT";
-  font-size: 1vw;
-  color: #404040;
-  margin-bottom: 1.45vw;
-}
-.period .period_right span {
-  font-family: "TT";
-  font-size: 0.9vw;
-  color: #404040;
-  line-height: 1vw;
-  margin-bottom:  1.45vw;
-}
-.project1_explan .main_text {
-  margin-top: 1.45vw;
-} */
-.sec4Lbox_tbox .main_text p {
-  font-size: 1vw;
-  color: #404040;
-  font-style: normal;
-  line-height: 1.8vw;
-  margin-bottom: calc(var(--row) * 4);
-}
-/* //섹션4 왼쪽 */
-/* 섹션4 오른쪽 */
 .sec4 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   height: 39vw;
 }
+/* 섹션4 L */
+.sec4_Lnumber{
+  position: absolute;
+  color: rgba(183, 175, 191, 0.50);
+  font-size: 11vw;
+  font-weight: 700;
+  left: 2vw;
+  top: -4vw;
+}
+.sec4_left {
+  width: 35%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+    justify-content: space-around;
+}
+.sec4_Lbox {
+  width: 50vw;
+  border-radius: 2.5vw;
+  padding: 2.5vw;
+  position: absolute;
+  top: 7vw;
+  left: -8vw;
+  z-index: 5555;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.23) 0%, rgba(255, 255, 255, 0.23) 100%), linear-gradient(135deg, rgba(72, 27, 221, 0.37) 100%, rgba(131, 85, 235, 0.37) 55.9%, rgba(206, 159, 252, 0.37) 0%);
+  backdrop-filter: blur(20px);
+}
+.sec4Lbox_tbox{
+  margin-left: 6vw;
+}
+.sec4Lbox_tbox .title {
+  justify-content: space-between;
+}
+.sec4Lbox_tbox .title h2 {
+  font-size: 2vw;
+  font-family: "TT";
+  margin-top: 1vw;
+}
+.period {
+  padding-top: 1.4vw;
+}
+.period_left {
+  margin-right: 1vw;
+}
+.period_left span {
+  font-size: 1vw;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.45vw;
+}
+.sec4_Lbtnbox{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+/* //섹션4 L */
+/* 섹션 R */
 .sec4_right {
-  width: 48vw;
+  width: 55vw;
   height: 100%;
+  transition: left 1s ease-in-out;
+}
+
+.sec4_mockup img,
+.sec4_mockup .sec4_mask {
+  width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 .sec4_mockup {
-  width: 48vw;
+  width: 55vw;
   height: min(30rem, 100%);
   z-index: 3;
   height: 36vw;
-  border: 3px solid #8b35ee;
-  border-radius: 10px;
+  position: relative;
 }
 .sec4_mockup .sec4_mask {
-  background-color: rgb(255, 255, 255);
-  width: 48vw;
-  height: 36vw;
+  background-color: rgb(233, 3, 3);
+  width: 98%;
+  height: 38vw;
   z-index: 999999;
   overflow: hidden;
-  border-radius: 10px;
+  top: 4.5%;
+	left: 1.5%;
 }
 .sec4_screen {
   width: 100%;
 }
-/* //섹션4 오른쪽 */
+/* //섹션4 R */
 /* //섹션4 */
-
 /* 섹션5 */
 /* 섹션5 왼 */
 .section5 {
