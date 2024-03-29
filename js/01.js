@@ -178,28 +178,5 @@ const ani=bodymovin.loadAnimation({
   renderer:'svg',/* 어떤형식인지 */
   loop:true, /* 무한반복 */
   autoplay:true, /* 자동재생 */
-  path:'../json/logo.json',
+  path:'./json/logo.json',
 })
-
-/* Education 효과 */
-/* 
-window.onscroll = function () {
-  let heights = window.pageYOffset; //스크롤 높이
-  const sec3Title = document.querySelector(".box1"); //변수
-  const sec4Title = document.querySelector(".box2"); //변수
-
-  if (heights >= 2600) {
-    sec3Title.style.opacity = 1;
-    sec3Title.style.transform = "translate(0, 0)";
-  } else {
-    sec3Title.style.opacity = 0;
-    sec3Title.style.transform = "translate(-100%, 0)";
-  }
-  if (heights >= 2600) {
-    sec4Title.style.opacity = 1;
-    sec4Title.style.transform = "translate(0, 0)";
-  } else {
-    sec4Title.style.opacity = 0;
-    sec4Title.style.transform = "translate(100%, 0)";
-  }
-}; */
