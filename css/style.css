@@ -186,10 +186,8 @@ header:after {
 }
 .logo1 {
   margin-top: 10px;
-  width: 5%;
-  height: 5%;
-  background-color: white;
-  border-radius: 40px;
+  width: 7%;
+  height: 7%;
 }
 .gnb {
   width: 100%;
@@ -271,8 +269,8 @@ header:after {
 .sd:after {
   content: attr(data-shadow);
   position: absolute;
-  top: 4.15em;
-  left: 2.76em;
+  top: 20.9vw;
+  left: 14.3vw;
   z-index: -1;
   text-shadow: none;
   background-image: linear-gradient(
@@ -437,19 +435,21 @@ section {
   height: 10vw;
 }
 .section1_title {
-  font-family: "TT";
-  color: var(--primary_color);
+  font-style: normal;
+  font-weight: 800;
+  color: black;
   width: 100%;
 }
 .section1_title h2 {
   font-size: var(--n48);
 }
 .section1_p {
+  margin-top: 2vw;
   width: 100%;
   color: #1e1e1e;
   font-size: 1.5vw;
-  font-family: "TT";
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 600;
   line-height: 175%;
 }
 .section1_right_bottom {
@@ -461,7 +461,7 @@ section {
   border-radius: 30px;
   background: linear-gradient(90deg, #481bdd var(--p, 0), #d1d4e6 var(--p));
   margin: auto;
-  margin-top: 60px;
+  margin-top: 3vw;
   --p: 0%;
   position: relative;
 }
@@ -476,7 +476,7 @@ section {
   position: absolute;
   color: #000;
   font-size: 1.4vw;
-  font-family: "TT";
+  font-style: normal;
   font-weight: 600;
 }
 .section1_right_bottom_text p {
@@ -485,7 +485,7 @@ section {
   top: -100%;
   color: #000;
   font-size: 1.4vw;
-  font-family: "TT";
+  font-style: normal;
   font-weight: 600;
 }
 .section1_text::after {
@@ -534,26 +534,24 @@ section {
   line-height: 1.8;
 }
 .box_L span {
-  color: white;
-  font-family: 'TT';
+  font-weight: 600;
+  font-style: normal;
   font-size: 1.2vw;
 }
 .box_L h3 {
-  color: white;
-  font-family: 'TT';
+  font-style: normal;
   font-size: 2.4vw;
-  font-weight: 500;
+  font-weight: 600;
 }
 .box_R span {
-  color: white;
-  font-family: 'TT';
+  font-weight: 600;
+  font-style: normal;
   font-size: 1.2vw;
 }
 .box_R h3 {
-  color: white;
-  font-family: 'TT';
+  font-style: normal;
   font-size: 2.4vw;
-  font-weight: 500;
+  font-weight: 600;
 }
 .box1,
 .box2 {
@@ -566,7 +564,7 @@ section {
   margin-top: 5vw;
 }
 .sec2_bottm h3 {
-  font-family: 'TT';
+  font-style: normal;
   line-height: 1.75;
   font-size: 2.4vw;
   font-weight: 600;
@@ -649,20 +647,20 @@ section {
 }
 .period_left span {
   font-size: 1vw;
-  font-family: "TT";
+  font-style: normal;
   color: #808080;
   display: flex;
   flex-direction: column;
   margin-bottom: 1.45vw;
 }
 .period_right p {
-  font-family: "TT";
+  font-style: normal;
   font-size: 1vw;
   color: #404040;
   margin-bottom: 1.45vw;
 }
 .period .period_right span {
-  font-family: "TT";
+  font-style: normal;
   font-size: 0.9vw;
   color: #404040;
   line-height: 1vw;
@@ -674,7 +672,7 @@ section {
 .sec3rbox_tbox .main_text p {
   font-size: 1vw;
   color: #404040;
-  font-family: "TT";
+  font-style: normal;
   line-height: 1.8vw;
   margin-bottom: calc(var(--row) * 4);
 }
@@ -707,7 +705,7 @@ section {
   margin-top: 1vw;
   margin-bottom: 1vw;
 }
-.period {
+/* .period {
   padding-top: 1.4vw;
   border-bottom: 1px solid;
 }
@@ -737,11 +735,11 @@ section {
 }
 .project1_explan .main_text {
   margin-top: 1.45vw;
-}
+} */
 .sec4Lbox_tbox .main_text p {
   font-size: 1vw;
   color: #404040;
-  font-family: "TT";
+  font-style: normal;
   line-height: 1.8vw;
   margin-bottom: calc(var(--row) * 4);
 }
@@ -781,29 +779,22 @@ section {
 
 /* 섹션5 */
 /* 섹션5 왼 */
-.section3 {
+.section5 {
   overflow: hidden;
   margin-top: 4vw;
   width: 100%;
 }
-.sec3_title{
-  margin-left: 5vw;
-  padding-bottom: 2vw;
-  font-size: 5vw;
-  font-weight: 600;
-  font-family: 'TT';
-}
-.sec3 {
+.sec5 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   height: 39vw;
 }
-.sec3_left {
+.sec5_left {
   width: 48vw;
   height: 100%;
 }
-.sec3_mockup {
+.sec5_mockup {
   width: 48vw;
   height: min(30rem, 100%);
   z-index: 3;
@@ -811,7 +802,7 @@ section {
   border: 3px solid #8b35ee;
   border-radius: 10px;
 }
-.sec3_mockup .sec3_mask {
+.sec5_mockup .sec5_mask {
   background-color: rgb(255, 255, 255);
   width: 48vw;
   height: 36vw;
@@ -819,30 +810,30 @@ section {
   overflow: hidden;
   border-radius: 10px;
 }
-.sec3_screen {
+.sec5_screen {
   width: 100%;
 }
 /* //섹션5 왼 */
 /* 섹션5 오른쪽텍스트박스 */
-.sec3_right {
+.sec5_right {
   width: 35%;
 }
-.sec3_rbox {
+.sec5_rbox {
   background: #8b35ee4a;
   border-radius: 20px;
   padding: 2.5vw;
 }
-.sec3rbox_tbox .title {
+.sec5rbox_tbox .title {
   justify-content: space-between;
   border-bottom: 1px solid;
 }
-.sec3rbox_tbox .title h2 {
+.sec5rbox_tbox .title h2 {
   font-size: 2vw;
   font-family: "TT";
   margin-top: 1vw;
   margin-bottom: 1vw;
 }
-.period {
+/* .period {
   padding-top: 1.4vw;
   border-bottom: 1px solid;
 }
@@ -872,11 +863,10 @@ section {
 }
 .project1_explan .main_text {
   margin-top: 1.45vw;
-}
-.sec3rbox_tbox .main_text p {
+} */
+.sec5rbox_tbox .main_text p {
   font-size: 1vw;
   color: #404040;
-  font-family: "TT";
   line-height: 1.8vw;
   margin-bottom: calc(var(--row) * 4);
 }

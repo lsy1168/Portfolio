@@ -73,14 +73,14 @@ rects.forEach((el) => {
 });
 
 /* 프로젝트 스크롤 */
-
 const pc = document.querySelector(".sec3_mockup");
 const left = document.querySelector(".sec3 .sec3_left");
-/* const mobile = document.querySelector(".sec4 .mobile"); */
 const pcS = pc.querySelector(".sec3_screen");
 const pcM = pc.querySelector(".sec3_mask");
-/* const mobileS = mobile.querySelector(".screen");
-const mobileM = mobile.querySelector(".mask"); */
+const pc2 = document.querySelector(".sec4_mockup");
+const right = document.querySelector(".sec4 .sec4_right");
+const pcS2 = pc.querySelector(".sec4_screen");
+const pcM2 = pc.querySelector(".sec4_mask");
 //up
 const aniUp = (mask, screen) => {
   let newH1 = mask.clientHeight;
@@ -88,12 +88,21 @@ const aniUp = (mask, screen) => {
   let height = newH1 - newH2;
   gsap.to(screen, { y: height, duration: 0.5 });
 };
+const aniUp2 = (mask, screen) => {
+  let newH3 = mask.clientHeight;
+  let newH4 = screen.clientHeight;
+  let height = newH3 - newH4;
+  gsap.to(screen, { y: height, duration: 0.5 });
+};
 //down
 const aniDown = (screen) => {
   gsap.to(screen, { y: 0, duration: 0.5 });
 };
+const aniDown2 = (screen) => {
+  gsap.to(screen, { y: 0, duration: 0.5 });
+};
 ScrollTrigger.create({
-  trigger: ".sec3",
+  trigger: ".sec3", 
   start: "top bottom",
   end: "bottom top",
   markers: true,
@@ -101,8 +110,6 @@ ScrollTrigger.create({
   onEnter: () => {
     pcM.addEventListener("mouseenter", () => aniUp(pcM, pcS));
     pcM.addEventListener("mouseleave", () => aniDown(pcS));
-   /*  mobileM.addEventListener("mouseenter", () => aniUp(mobileM, mobileS));
-    mobileM.addEventListener("mouseleave", () => aniDown(mobileS)); */
     gsap.fromTo(left, { yPercent: 100 }, { yPercent: 0, duration: 1 });
   },
 });
@@ -174,5 +181,5 @@ const ani=bodymovin.loadAnimation({
   renderer:'svg',/* 어떤형식인지 */
   loop:true, /* 무한반복 */
   autoplay:true, /* 자동재생 */
-  path:'./json/logo.json',
+  path:'./json/cctv.json',
 })
