@@ -178,7 +178,7 @@ const ani=bodymovin.loadAnimation({
   renderer:'svg',/* 어떤형식인지 */
   loop:true, /* 무한반복 */
   autoplay:true, /* 자동재생 */
-  path:'/logo.json',
+  path:'../json/logo.json',
 })
 
 /* Education 효과 */
