@@ -1,4 +1,4 @@
-/*  */
+/* gnb 이동효과*/
 (() => {
 	const navContainer = document.querySelector('.header_gnb');
 	const btnsMenu = document.querySelector('.gnb');
@@ -75,11 +75,11 @@ rects.forEach((el) => {
 
 /* 프로젝트 스크롤 */
 
-const pc = document.querySelector(".sec3 .pc");
-const left = document.querySelector(".sec3 .left");
+const pc = document.querySelector(".sec3_mockup");
+const left = document.querySelector(".sec3 .sec3_left");
 /* const mobile = document.querySelector(".sec4 .mobile"); */
-const pcS = pc.querySelector(".screen");
-const pcM = pc.querySelector(".mask");
+const pcS = pc.querySelector(".sec3_screen");
+const pcM = pc.querySelector(".sec3_mask");
 /* const mobileS = mobile.querySelector(".screen");
 const mobileM = mobile.querySelector(".mask"); */
 //up
@@ -94,7 +94,7 @@ const aniDown = (screen) => {
   gsap.to(screen, { y: 0, duration: 0.5 });
 };
 ScrollTrigger.create({
-  trigger: ".left",
+  trigger: ".sec3",
   start: "top bottom",
   end: "bottom top",
   markers: true,
@@ -109,14 +109,11 @@ ScrollTrigger.create({
 });
 
 /* 마우스효과 */
-const el = document.querySelector(".followAnimation");
-//마우스 좌표
+/* const el = document.querySelector(".followAnimation");
 let mouseX = 0;
 let mouseY = 0;
-//요소좌표
 let currentX = 0;
 let currentY = 0;
-//브라우저의 마우스 좌표값얻기
 document.addEventListener("mousemove", (e) => {
   console.log(e);
   mouseX = e.clientX;
@@ -129,9 +126,9 @@ function tick() {
   currentX += (mouseX - currentX) * 0.1;
   currentY += (mouseY - currentY) * 0.1;
   el.style.transform = `translate(${currentX}px, ${currentY}px)`;
-  /* el.style.left = currentX+"px";
-el.style.top = currentY+"px"; */
-}
+
+} */
+
 /* transform:translate(-50%,-50%) */
 
 /* 프로필 효과 */ /* Education 효과 */
