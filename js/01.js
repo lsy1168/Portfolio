@@ -75,8 +75,8 @@ rects.forEach((el) => {
 
 /* 프로젝트 스크롤 */
 
-const pc = document.querySelector(".sec4 .pc");
-const left = document.querySelector(".sec4 .left");
+const pc = document.querySelector(".sec3 .pc");
+const left = document.querySelector(".sec3 .left");
 /* const mobile = document.querySelector(".sec4 .mobile"); */
 const pcS = pc.querySelector(".screen");
 const pcM = pc.querySelector(".mask");
