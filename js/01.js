@@ -189,3 +189,30 @@ const ani=bodymovin.loadAnimation({
   autoplay:true, /* 자동재생 */
   path:'./json/cctv.json',
 })
+
+/* ==========
+타이핑
+========== */
+
+const txt1 = '인간지능행동모델'; /* The text */
+const txt2 = '음성입력방식'; /* The text */
+const txt3 = '맥락판단처리기능'; /* The text */
+
+const typed = new Typed('.type', {
+	strings: [`<span>${txt1}</span>`, `<span>${txt2}</span>`, `<span>${txt3}</span>`],
+	typeSpeed: 50,
+	loop: true,
+	loopConunt: Infinity,
+	showCursor: false,
+});
+/* ==========
+메인로티
+========== */
+
+const main_ani = bodymovin.loadAnimation({
+	container: document.querySelector('.lottie_main'),
+	renderer: 'svg',
+	loop: true,
+	autoplay: true,
+	path: './json/main.json',
+});

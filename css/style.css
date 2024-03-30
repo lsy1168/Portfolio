@@ -92,6 +92,9 @@
   border: 1px solid var(--third_color);
   animation: ani-btn 0.3s forwards;
 }
+.btn p {
+  font-family: "Pretendard", sans-serif;
+}
 @keyframes ani-btn {
   60% {
     transform: scale3d(0.8, 0.8, 1);
@@ -113,19 +116,15 @@
   transform: translate(0, 0);
 }
 /* 레이아웃 */
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-body {
-  background-color: #fdfdfd;
-}
 .w1700 {
   margin: auto;
   max-width: 1900px;
   width: 100%;
   overflow: hidden;
+}
+.container {
+  max-width: 1320px;
+  margin: auto;
 }
 .Bannerbox {
   width: 100%;
@@ -176,6 +175,8 @@ header:after {
   flex-direction: row;
   justify-content: space-evenly;
   border-radius: 1vw 0 1vw 1vw;
+  z-index: 999;
+  backdrop-filter: blur(10px);
 }
 /* 헤더 */
 .logo {
@@ -204,36 +205,29 @@ header:after {
 .dep1 a {
   color: white;
 }
+/* ====================================
+    ======= banner ======
+==================================== */
 .banner {
   width: 100%;
   color: #fff;
-}
-.main_text .fs {
-  font-size: var(--n56);
-  color: transparent;
-  -webkit-text-stroke: 1px #fff;
-}
-.main_text .fm {
-  font-size: calc(var(--n56));
-  color: transparent;
-  -webkit-text-stroke: 1px #fff;
-}
-.main_text .fl {
-  font-size: calc(var(--n72));
-}
-.banner_main {
-  align-items: center;
   display: flex;
-  flex-direction: row;
-  gap: var(--n40);
-  justify-content: space-evenly;
 }
-.main_text {
-  font-family: var(--accentText);
+.banner .container {
+  display: flex;
+}
+.left, .right {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  gap: var(--n16);
   align-items: center;
+}
+.left .row {
+  box-sizing: border-box;
+  font-size: clamp(4vw, 5vw, 100%);
+  height: 8vw;
+  line-height: 8vw;
+  font-family: "TT";
 }
 .eye {
   display: inline-block;
@@ -269,8 +263,8 @@ header:after {
 .sd:after {
   content: attr(data-shadow);
   position: absolute;
-  top: 21.5vw;
-  left: 14.3vw;
+  top: 22vw;
+  left: 19.1vw;
   z-index: -1;
   text-shadow: none;
   background-image: linear-gradient(
@@ -300,19 +294,7 @@ header:after {
   flex-direction: row;
   justify-content: space-around;
 }
-.circle {
-  width: 30vw;
-  height: 30vw;
-  background-color: #8b35eebc;
-  border-radius: 50%;
-  position: relative;
-}
-.circle img {
-  width: 22vw;
-  position: absolute;
-  left: 2vw;
-  top: 4vw;
-}
+
 /* //헤더 */
 
 /* 메인 */
