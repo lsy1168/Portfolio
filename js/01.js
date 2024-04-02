@@ -122,9 +122,12 @@ function tick() {
 
 /* transform:translate(-50%,-50%) */
 
-/* 프로필 효과 */ /* Education 효과 */
+/* 프로필 효과 */ /* Education 효과 */  //스크롤 효고ㅏ
 window.onscroll = function () {
 	let height = window.pageYOffset; //스크롤 높이
+	let width = window.innerWidth; // 스크린 넓이
+
+	/* 변수 */
 	const sec1Title = document.querySelector('.section1_left_top'); //변수 /* 섹션1 프로필이미지 */
 	const sec2Title = document.querySelector('.section1_right'); //변수   /* 섹션1 스킬바 */
 	const sec3Title = document.querySelector('.box1'); //변수     /* 섹션2 박스 */
@@ -137,68 +140,167 @@ window.onscroll = function () {
 
 
 	
-	if (height >= 1000) {
-		sec1Title.style.opacity = 1;
-		sec1Title.style.transform = 'translate(5%, 0)';
-	} else {
-		sec1Title.style.opacity = 0;
-		sec1Title.style.transform = 'translate(-100%, 0)';
+	//sec1 L
+	if(width >= 1100){
+		if(height >= 1000){
+			sec1Title.style.opacity = 1;
+			sec1Title.style.transform = 'translate(5%, 0)';
+		}else{
+			sec1Title.style.opacity = 0;
+			sec1Title.style.transform = 'translate(-100%, 0)';
+		}
+	}else{
+		if(height >= 100){
+			sec1Title.style.opacity = 1;
+			sec1Title.style.transform = 'translate(5%, 0)';
+		}else{
+			sec1Title.style.opacity = 0;
+			sec1Title.style.transform = 'translate(-100%, 0)';
+		}
 	}
-	if (height >= 1000) {
-		sec2Title.style.opacity = 1;
-		sec2Title.style.transform = 'translate(0, 0)';
-	} else {
-		sec2Title.style.opacity = 0;
-		sec2Title.style.transform = 'translate(100%, 0)';
+	//sec1 R
+	if(width >= 1100){
+		if(height >= 1300){
+			sec2Title.style.opacity = 1;
+			sec2Title.style.transform = 'translate(0, 0)';
+		}else{
+			sec2Title.style.opacity = 0;
+			sec2Title.style.transform = 'translate(100%, 0)';
+		}
+	}else{
+		if(height >= 150){
+			sec2Title.style.opacity = 1;
+			sec2Title.style.transform = 'translate(0, 0)';
+		}else{
+			sec2Title.style.opacity = 0;
+			sec2Title.style.transform = 'translate(200%, 0)';
+		}
 	}
-	if (height >= 1800) {
-		sec3Title.style.opacity = 1;
-		sec3Title.style.transform = 'translate(0, 0)';
-	} else {
-		sec3Title.style.opacity = 0;
-		sec3Title.style.transform = 'translate(-100%, 0)';
+	//sec2 L
+	if(width >= 1100){
+		if(height >= 2200){
+			sec3Title.style.opacity = 1;
+			sec3Title.style.transform = 'translate(0, 0)';
+		}else{
+			sec3Title.style.opacity = 0;
+			sec3Title.style.transform = 'translate(-100%, 0)';
+		}
+	}else{
+		if(height >= 300){
+			sec3Title.style.opacity = 1;
+			sec3Title.style.transform = 'translate(0, 0)';
+		}else{
+			sec3Title.style.opacity = 0;
+			sec3Title.style.transform = 'translate(-100%, 0)';
+		}
 	}
-	if (height >= 1800) {
-		sec4Title.style.opacity = 1;
-		sec4Title.style.transform = 'translate(0, 0)';
-	} else {
-		sec4Title.style.opacity = 0;
-		sec4Title.style.transform = 'translate(100%, 0)';
+	//sec2 R
+	if(width >= 1100){
+		if(height >= 2200){
+			sec4Title.style.opacity = 1;
+			sec4Title.style.transform = 'translate(0, 0)';
+		}else{
+			sec4Title.style.opacity = 0;
+			sec4Title.style.transform = 'translate(100%, 0)';
+		}
+	}else{
+		if(height >= 300){
+			sec4Title.style.opacity = 1;
+			sec4Title.style.transform = 'translate(0, 0)';
+		}else{
+			sec4Title.style.opacity = 0;
+			sec4Title.style.transform = 'translate(100%, 0)';
+		}
 	}
-	if (height >= 3300) {
-		sec5Title.style.opacity = 1;
-		sec5Title.style.transform = 'translate(0, 0)';
-	} else {
-		sec5Title.style.opacity = 0;
-		sec5Title.style.transform = 'translate(100%, 0)';
+	//sec3 R
+	if(width >= 1100){
+		if(height >= 3300){
+			sec5Title.style.opacity = 1;
+			sec5Title.style.transform = 'translate(0, 0)';
+		}else{
+			sec5Title.style.opacity = 0;
+			sec5Title.style.transform = 'translate(100%, 0)';
+		}
+	}else{
+		if(height >= 700){
+			sec5Title.style.opacity = 1;
+			sec5Title.style.transform = 'translate(0, 0)';
+		}else{
+			sec5Title.style.opacity = 0;
+			sec5Title.style.transform = 'translate(100%, 0)';
+		}
 	}
-	if (height >= 4300) {
-		sec6Title.style.opacity = 1;
-		sec6Title.style.transform = 'translate(0, 0)';
-	} else {
-		sec6Title.style.opacity = 0;
-		sec6Title.style.transform = 'translate(-100%, 0)';
+	//sec4 L
+	if(width >= 1100){
+		if(height >= 4300){
+			sec6Title.style.opacity = 1;
+			sec6Title.style.transform = 'translate(0, 0)';
+		}else{
+			sec6Title.style.opacity = 0;
+			sec6Title.style.transform = 'translate(-100%, 0)';
+		}
+	}else{
+		if(height >= 900){
+			sec6Title.style.opacity = 1;
+			sec6Title.style.transform = 'translate(0, 0)';
+		}else{
+			sec6Title.style.opacity = 0;
+			sec6Title.style.transform = 'translate(-100%, 0)';
+		}
 	}
-	if (height >= 5400) {
-		sec7Title.style.opacity = 1;
-		sec7Title.style.transform = 'translateY(0)';
-	} else {
-		sec7Title.style.opacity = 0;
-		sec7Title.style.transform = 'translateY(-150%';
+	//sec5 R
+	if(width >= 1100){
+		if(height >= 5300){
+			sec7Title.style.opacity = 1;
+			sec7Title.style.transform = 'translateY(0)';
+		}else{
+			sec7Title.style.opacity = 0;
+			sec7Title.style.transform = 'translateY(-150%)';
+		}
+	}else{
+		if(height >= 1200){
+			sec7Title.style.opacity = 1;
+			sec7Title.style.transform = 'translateY(0)';
+		}else{
+			sec7Title.style.opacity = 0;
+			sec7Title.style.transform = 'translateY(-150%)';
+		}
 	}
-	if (height >= 6400) {
-		sec8Title.style.opacity = 1;
-		sec8Title.style.transform = 'translate(0, 0)';
-	} else {
-		sec8Title.style.opacity = 0;
-		sec8Title.style.transform = 'translate(200%, 0)';
+	//sec6 L
+	if(width >= 1100){
+		if(height >= 6400){
+			sec8Title.style.opacity = 1;
+			sec8Title.style.transform = 'translate(0, 0)';
+		}else{
+			sec8Title.style.opacity = 0;
+			sec8Title.style.transform = 'translate(200%, 0)';
+		}
+	}else{
+		if(height >= 1400){
+			sec8Title.style.opacity = 1;
+			sec8Title.style.transform = 'translate(0, 0)';
+		}else{
+			sec8Title.style.opacity = 0;
+			sec8Title.style.transform = 'translate(200%, 0)';
+		}
 	}
-	if (height >= 7500) {
-		sec9Title.style.opacity = 1;
-		sec9Title.style.transform = 'translateY(0)';
-	} else {
-		sec9Title.style.opacity = 0;
-		sec9Title.style.transform = 'translateY(100%)';
+	//ft
+	if(width >= 1100){
+		if(height >= 7500){
+			sec9Title.style.opacity = 1;
+			sec9Title.style.transform = 'translateY(0)';
+		}else{
+			sec9Title.style.opacity = 0;
+			sec9Title.style.transform = 'translateY(100%)';
+		}
+	}else{
+		if(height >= 1550){
+			sec9Title.style.opacity = 1;
+			sec9Title.style.transform = 'translateY(0)';
+		}else{
+			sec9Title.style.opacity = 0;
+			sec9Title.style.transform = 'translateY(100%)';
+		}
 	}
 };
 
