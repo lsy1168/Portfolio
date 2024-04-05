@@ -774,7 +774,7 @@ section {
   border-radius: 2.5vw;
   padding: 2.5vw;
   position: absolute;
-  top: 7vw;
+  top: 0vw;
   left: -8vw;
   z-index: 5555;
   background: linear-gradient(0deg,
@@ -822,7 +822,11 @@ section {
   font-style: normal;
   display: flex;
   flex-direction: column;
+  font-weight: 600;
   margin-bottom: 1.45vw;
+}
+.sec_span{
+  line-height: 1.5vw;
 }
 
 .sec3_Rbtnbox {
@@ -874,7 +878,7 @@ section {
   border-radius: 2.5vw;
   padding: 2.5vw;
   position: absolute;
-  top: 7vw;
+  top: -3vw;
   left: -12vw;
   z-index: 5555;
   background: linear-gradient(0deg,
@@ -890,9 +894,6 @@ section {
 
 .sec4Lbox_tbox {
   margin-left: 6vw;
-  /*   display: flex;
-  flex-direction: column;
-    align-items: flex-end; */
 }
 
 .sec4Lbox_tbox .title {
@@ -1026,7 +1027,11 @@ section {
 .sec5_screen {
   width: 100%;
 }
-
+.line{
+  width: 100%;
+    height: 2px;
+    background: #d5d5d5;
+}
 /* //섹션5 L */
 /* 섹션5 R */
 .sec5_right {
