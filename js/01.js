@@ -313,7 +313,7 @@ window.onscroll = function () {
 			sec9Title.style.transform = 'translateY(100%)';
 		}
 	}else{
-		if(height >= 1550){
+		if(height >= 1400){
 			sec9Title.style.opacity = 1;
 			sec9Title.style.transform = 'translateY(0)';
 		}else{
