@@ -4,7 +4,7 @@
 	const btnsMenu = document.querySelector('.gnb');
 
 	document.addEventListener('scroll', function () {
-		console.log(window.scrollY);
+	/* 	console.log(window.scrollY); */
 		if (window.scrollY > 60) {
 			navContainer.classList.add('bg_show');
 		} else {
@@ -15,7 +15,7 @@
 	btnsMenu.addEventListener('click', function (e) {
 		e.preventDefault();
 		const target = e.target;
-		console.log(target);
+		/* console.log(target); */
 		const link = target.dataset.link;
 		if (link == null) {
 			return;
@@ -73,7 +73,7 @@ ScrollTrigger.create({
 	trigger: projects,
 	start: 'top bottom',
 	end: 'bottom top',
-	markers: true,
+/* 	markers: true, */
 	scrub: 0.5,
 	onEnter: () => {
 		pipScroll();
