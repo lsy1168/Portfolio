@@ -1,6 +1,12 @@
 @charset "utf-8";
 @import url(https://qwerewqwerew.github.io/source/style/reset.css);
 
+@font-face {
+  font-family: 'F9';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
 /* 공통 */
 @font-face {
   font-family: "TT";
@@ -540,6 +546,7 @@ section {
 
 .section1_title h2 {
   font-size: var(--n48);
+  font-family: 'F9';
 }
 
 .section1_p {
@@ -550,6 +557,7 @@ section {
   font-style: normal;
   font-weight: 600;
   line-height: 175%;
+  font-family: 'F9';
 }
 
 .section1_right_bottom {
@@ -579,7 +587,7 @@ section {
   position: absolute;
   color: #000;
   font-size: 1.4vw;
-  font-style: normal;
+  font-family: 'F9';
   font-weight: 600;
 }
 
@@ -589,7 +597,7 @@ section {
   top: -100%;
   color: #000;
   font-size: 1.4vw;
-  font-style: normal;
+  font-family: 'F9';
   font-weight: 600;
 }
 
@@ -644,27 +652,23 @@ section {
 }
 
 .box_L span {
-  font-weight: 600;
-  font-style: normal;
+  font-family: 'F9';
   font-size: 1.2vw;
 }
 
 .box_L h3 {
-  font-style: normal;
+  font-family: 'F9';
   font-size: 2.4vw;
-  font-weight: 600;
 }
 
 .box_R span {
-  font-weight: 600;
-  font-style: normal;
+  font-family: 'F9';
   font-size: 1.2vw;
 }
 
 .box_R h3 {
-  font-style: normal;
+  font-family: 'F9';
   font-size: 2.4vw;
-  font-weight: 600;
 }
 
 .box1,
@@ -676,18 +680,26 @@ section {
 
 /* 섹션2 아래 */
 .sec2_bottm {
-  margin-top: 5vw;
+  margin-top: 7.5vw;
+}
+
+.sec2_bottm_box{
+  width: 100%;
+  height: 100%;
+  transition: all 2s ease 0s;
 }
 
 .sec2_bottm h3 {
-  font-style: normal;
+  font-family: 'F9';
   line-height: 1.75;
-  font-size: 2.4vw;
+  font-size: 1.5vw;
   font-weight: 600;
   margin-left: 5vw;
   margin-right: 5vw;
 }
-
+.sec2_bottm_box span{
+  color: var(--primary_color);
+}
 /* //섹션2 아래 */
 /* //섹션2 */
 
@@ -805,7 +817,7 @@ section {
 
 .sec3rbox_tbox .title h2 {
   font-size: 2vw;
-  font-family: "TT";
+  font-family: 'TT';
   margin-top: 1vw;
 }
 
@@ -817,24 +829,29 @@ section {
   margin-right: 1vw;
 }
 
-.period_left span {
+.period_left>span {
   font-size: 1vw;
-  font-style: normal;
+  font-family: 'F9';
   display: flex;
   flex-direction: column;
   font-weight: 600;
   margin-bottom: 1.45vw;
 }
-.sec_span{
-  line-height: 1.5vw;
-}
-
 .sec3_Rbtnbox {
   position: absolute;
   bottom: 10vw;
   width: 100%;
   display: flex;
   justify-content: space-around;
+}
+.sec_h5{
+  font-size: 1vw;
+  font-family: 'F9';
+  width: 26vw;
+  line-height: 1.5vw;
+}
+.sec_h5 span{
+  color: var(--four_color);
 }
 
 /* //섹션3 오른쪽 */
@@ -904,22 +921,6 @@ section {
   font-size: 2vw;
   font-family: "TT";
   margin-top: 1vw;
-}
-
-.period {
-  padding-top: 1.4vw;
-}
-
-.period_left {
-  margin-right: 1vw;
-}
-
-.period_left span {
-  font-size: 1vw;
-  font-style: normal;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.45vw;
 }
 
 .sec4_Lbtnbox {
@@ -1090,23 +1091,6 @@ section {
   font-family: "TT";
   margin-top: 1vw;
 }
-
-.period {
-  padding-top: 1.4vw;
-}
-
-.period_left {
-  margin-right: 1vw;
-}
-
-.period_left span {
-  font-size: 1vw;
-  font-style: normal;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.45vw;
-}
-
 .sec5_Rbtnbox {
   position: absolute;
   bottom: 10vw;
@@ -1185,22 +1169,6 @@ section {
   font-size: 2vw;
   font-family: "TT";
   margin-top: 1vw;
-}
-
-.period {
-  padding-top: 1.4vw;
-}
-
-.period_left {
-  margin-right: 1vw;
-}
-
-.period_left span {
-  font-size: 1vw;
-  font-style: normal;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.45vw;
 }
 
 .sec6_Lbtnbox {

@@ -82,7 +82,7 @@ ScrollTrigger.create({
 
 function pipScroll() {
 	const devices = $('.mockup');
-	console.log(devices);
+	/* console.log(devices); */
 	$.each(devices, function () {
 		const device = $(this);
 		const screen = device.find('.screen');
@@ -137,6 +137,7 @@ window.onscroll = function () {
 	const sec7Title = document.querySelector('.sec5_rbox'); //변수 /* 섹션5 R 텍스트박스 */
 	const sec8Title = document.querySelector('.sec6_Lbox'); //변수 /* 섹션6 L 텍스트박스 */
 	const sec9Title = document.querySelector('.footer_main'); //변수 /* 푸터 박스 */
+	const sec10Title = document.querySelector('.sec2_bottm_box'); //변수 /* 푸터 박스 */
 
 
 	
@@ -160,7 +161,7 @@ window.onscroll = function () {
 	}
 	//sec1 R
 	if(width >= 1100){
-		if(height >= 1300){
+		if(height >= 1000){
 			sec2Title.style.opacity = 1;
 			sec2Title.style.transform = 'translate(0, 0)';
 		}else{
@@ -168,7 +169,7 @@ window.onscroll = function () {
 			sec2Title.style.transform = 'translate(100%, 0)';
 		}
 	}else{
-		if(height >= 150){
+		if(height >= 100){
 			sec2Title.style.opacity = 1;
 			sec2Title.style.transform = 'translate(0, 0)';
 		}else{
@@ -178,7 +179,7 @@ window.onscroll = function () {
 	}
 	//sec2 L
 	if(width >= 1100){
-		if(height >= 2200){
+		if(height >= 2000){
 			sec3Title.style.opacity = 1;
 			sec3Title.style.transform = 'translate(0, 0)';
 		}else{
@@ -196,7 +197,7 @@ window.onscroll = function () {
 	}
 	//sec2 R
 	if(width >= 1100){
-		if(height >= 2200){
+		if(height >= 2000){
 			sec4Title.style.opacity = 1;
 			sec4Title.style.transform = 'translate(0, 0)';
 		}else{
@@ -210,6 +211,24 @@ window.onscroll = function () {
 		}else{
 			sec4Title.style.opacity = 0;
 			sec4Title.style.transform = 'translate(100%, 0)';
+		}
+	}
+	//sec2 B
+	if(width >= 1100){
+		if(height >= 2100){
+			sec10Title.style.opacity = 1;
+			sec10Title.style.transform = 'translateY(0)';
+		}else{
+			sec10Title.style.opacity = 0;
+			sec10Title.style.transform = 'translateY(-100%)';
+		}
+	}else{
+		if(height >= 300){
+			sec10Title.style.opacity = 1;
+			sec10Title.style.transform = 'translateY(0)';
+		}else{
+			sec10Title.style.opacity = 0;
+			sec10Title.style.transform = 'translateY(-100%)';
 		}
 	}
 	//sec3 R
