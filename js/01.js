@@ -295,7 +295,7 @@ window.onscroll = function () {
 			sec8Title.style.transform = 'translate(200%, 0)';
 		}
 	}else{
-		if(height >= 1400){
+		if(height >= 1300){
 			sec8Title.style.opacity = 1;
 			sec8Title.style.transform = 'translate(0, 0)';
 		}else{
@@ -305,7 +305,7 @@ window.onscroll = function () {
 	}
 	//ft
 	if(width >= 1100){
-		if(height >= 7500){
+		if(height >= 7200){
 			sec9Title.style.opacity = 1;
 			sec9Title.style.transform = 'translateY(0)';
 		}else{
@@ -313,7 +313,7 @@ window.onscroll = function () {
 			sec9Title.style.transform = 'translateY(100%)';
 		}
 	}else{
-		if(height >= 1400){
+		if(height >= 1300){
 			sec9Title.style.opacity = 1;
 			sec9Title.style.transform = 'translateY(0)';
 		}else{
