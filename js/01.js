@@ -73,7 +73,7 @@ ScrollTrigger.create({
 	trigger: projects,
 	start: 'top bottom',
 	end: 'bottom top',
-/* 	markers: true, */
+    pinSpacing: false,
 	scrub: 0.5,
 	onEnter: () => {
 		pipScroll();
@@ -187,7 +187,7 @@ window.onscroll = function () {
 			sec3Title.style.transform = 'translate(-100%, 0)';
 		}
 	}else{
-		if(height >= 300){
+		if(height >= 200){
 			sec3Title.style.opacity = 1;
 			sec3Title.style.transform = 'translate(0, 0)';
 		}else{
@@ -205,7 +205,7 @@ window.onscroll = function () {
 			sec4Title.style.transform = 'translate(100%, 0)';
 		}
 	}else{
-		if(height >= 300){
+		if(height >= 200){
 			sec4Title.style.opacity = 1;
 			sec4Title.style.transform = 'translate(0, 0)';
 		}else{
@@ -223,7 +223,7 @@ window.onscroll = function () {
 			sec10Title.style.transform = 'translateY(-100%)';
 		}
 	}else{
-		if(height >= 300){
+		if(height >= 200){
 			sec10Title.style.opacity = 1;
 			sec10Title.style.transform = 'translateY(0)';
 		}else{
@@ -241,7 +241,7 @@ window.onscroll = function () {
 			sec5Title.style.transform = 'translate(100%, 0)';
 		}
 	}else{
-		if(height >= 700){
+		if(height >= 400){
 			sec5Title.style.opacity = 1;
 			sec5Title.style.transform = 'translate(0, 0)';
 		}else{
@@ -259,7 +259,7 @@ window.onscroll = function () {
 			sec6Title.style.transform = 'translate(-100%, 0)';
 		}
 	}else{
-		if(height >= 900){
+		if(height >= 450){
 			sec6Title.style.opacity = 1;
 			sec6Title.style.transform = 'translate(0, 0)';
 		}else{
@@ -277,7 +277,7 @@ window.onscroll = function () {
 			sec7Title.style.transform = 'translateY(-150%)';
 		}
 	}else{
-		if(height >= 1200){
+		if(height >= 650){
 			sec7Title.style.opacity = 1;
 			sec7Title.style.transform = 'translateY(0)';
 		}else{
@@ -295,7 +295,7 @@ window.onscroll = function () {
 			sec8Title.style.transform = 'translate(200%, 0)';
 		}
 	}else{
-		if(height >= 1300){
+		if(height >= 800){
 			sec8Title.style.opacity = 1;
 			sec8Title.style.transform = 'translate(0, 0)';
 		}else{
@@ -313,7 +313,7 @@ window.onscroll = function () {
 			sec9Title.style.transform = 'translateY(100%)';
 		}
 	}else{
-		if(height >= 1300){
+		if(height >= 1000){
 			sec9Title.style.opacity = 1;
 			sec9Title.style.transform = 'translateY(0)';
 		}else{
