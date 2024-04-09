@@ -142,7 +142,7 @@ window.onscroll = function () {
 
 	
 	//sec1 L
-	if(width >= 1100){
+	if(width >= 1000){
 		if(height >= 1000){
 			sec1Title.style.opacity = 1;
 			sec1Title.style.transform = 'translate(5%, 0)';
@@ -160,7 +160,7 @@ window.onscroll = function () {
 		}
 	}
 	//sec1 R
-	if(width >= 1100){
+	if(width >= 1000){
 		if(height >= 1000){
 			sec2Title.style.opacity = 1;
 			sec2Title.style.transform = 'translate(0, 0)';
@@ -178,7 +178,7 @@ window.onscroll = function () {
 		}
 	}
 	//sec2 L
-	if(width >= 1100){
+	if(width >= 1000){
 		if(height >= 2000){
 			sec3Title.style.opacity = 1;
 			sec3Title.style.transform = 'translate(0, 0)';
@@ -196,7 +196,7 @@ window.onscroll = function () {
 		}
 	}
 	//sec2 R
-	if(width >= 1100){
+	if(width >= 1000){
 		if(height >= 2000){
 			sec4Title.style.opacity = 1;
 			sec4Title.style.transform = 'translate(0, 0)';
@@ -214,7 +214,7 @@ window.onscroll = function () {
 		}
 	}
 	//sec2 B
-	if(width >= 1100){
+	if(width >= 1000){
 		if(height >= 2100){
 			sec10Title.style.opacity = 1;
 			sec10Title.style.transform = 'translateY(0)';
@@ -232,7 +232,7 @@ window.onscroll = function () {
 		}
 	}
 	//sec3 R
-	if(width >= 1100){
+	if(width >= 1000){
 		if(height >= 3300){
 			sec5Title.style.opacity = 1;
 			sec5Title.style.transform = 'translate(0, 0)';
@@ -250,7 +250,7 @@ window.onscroll = function () {
 		}
 	}
 	//sec4 L
-	if(width >= 1100){
+	if(width >= 1000){
 		if(height >= 4300){
 			sec6Title.style.opacity = 1;
 			sec6Title.style.transform = 'translate(0, 0)';
@@ -268,7 +268,7 @@ window.onscroll = function () {
 		}
 	}
 	//sec5 R
-	if(width >= 1100){
+	if(width >= 1000){
 		if(height >= 5300){
 			sec7Title.style.opacity = 1;
 			sec7Title.style.transform = 'translateY(0)';
@@ -286,7 +286,7 @@ window.onscroll = function () {
 		}
 	}
 	//sec6 L
-	if(width >= 1100){
+	if(width >= 1000){
 		if(height >= 6400){
 			sec8Title.style.opacity = 1;
 			sec8Title.style.transform = 'translate(0, 0)';
@@ -304,7 +304,7 @@ window.onscroll = function () {
 		}
 	}
 	//ft
-	if(width >= 1100){
+	if(width >= 1000){
 		if(height >= 7200){
 			sec9Title.style.opacity = 1;
 			sec9Title.style.transform = 'translateY(0)';
