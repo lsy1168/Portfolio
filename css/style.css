@@ -1,12 +1,22 @@
 @charset "utf-8";
 @import url(https://qwerewqwerew.github.io/source/style/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
 
+.noto-sans-kr-<uniquifier> {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 @font-face {
   font-family: 'F9';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
   font-weight: 900;
   font-style: normal;
 }
+
 /* 공통 */
 @font-face {
   font-family: "TT";
@@ -110,7 +120,8 @@
 }
 
 .btn p {
-  font-family: "Pretendard", sans-serif;
+  font-family: "Noto Sans KR";
+  font-size: 1vw;
 }
 
 @keyframes ani-btn {
@@ -140,13 +151,15 @@
 /* 레이아웃 */
 .w1700 {
   margin: auto;
-  max-width: 1900px;
+  max-width: 2560px;
   width: 100%;
   overflow: hidden;
 }
 
 .container {
-  max-width: 1320px;
+  max-width: 1600px;
+  width: 100%;
+display: flex;
   margin: auto;
 }
 
@@ -172,11 +185,11 @@ header:after {
   transform: rotate(150deg);
   position: absolute;
   content: "";
-  height: 1273px;
-  width: 2300px;
+  height: 67vw;
+  width: 120vw;
   border-radius: 666px;
-  top: -819px;
-  left: -100px;
+  top: -40vw;
+  left: -7vw;
 }
 
 header:before {
@@ -279,6 +292,13 @@ header:after {
   line-height: 7vw;
   font-family: "TT";
 }
+.left .row2 {
+  box-sizing: border-box;
+  font-size: clamp(4vw, 5vw, 100%);
+  height: 7vw;
+  line-height: 7vw;
+  font-family: "Noto Sans KR";
+}
 
 .firecrackerbox {
   width: 35vw;
@@ -345,17 +365,19 @@ header:after {
 }
 
 .sd {
+  width: 16vw;
   display: inline-block;
   color: white;
   font-size: var(--n104);
   text-shadow: 0.03em 0.03em 0 hsla(230, 40%, 50%, 1);
+  position: relative;
 }
 
 .sd:after {
   content: attr(data-shadow);
   position: absolute;
-  top: 21vw;
-  left: 19.1vw;
+  top: 0.6vw;
+  left: 0.4vw;
   z-index: -1;
   text-shadow: none;
   background-image: linear-gradient(45deg,
@@ -409,10 +431,12 @@ header:after {
 
 .n1 {
   animation: marquee forwards infinite linear 16s;
+
 }
 
 .n2 {
   animation: marquee2 forwards infinite linear 10s;
+
 }
 
 .txt {
@@ -420,12 +444,14 @@ header:after {
   font-size: 8vw;
   font-family: TT;
   white-space: nowrap;
+
 }
 
 .n1 .txt strong {
   color: var(--primary_color);
   display: inline-block;
   padding: 0 1.6rem;
+
 }
 
 .n1 .txt span {
@@ -495,13 +521,15 @@ header:after {
     transform: translateX(0);
   }
 }
-
+.o{
+  display: none;
+}
 /* //제목애니메이션 */
 /* ====================================
  ======= section ======
 ==================================== */
 section {
-  padding: 30px 10px 0;
+  padding: 30px 30px ;
 }
 
 /* 섹션1 */
@@ -817,12 +845,15 @@ section {
 
 .sec3rbox_tbox .title h2 {
   font-size: 2vw;
-  font-family: 'TT';
+  font-family: "Noto Sans KR";
+  font-weight: 700;
   margin-top: 1vw;
 }
 
 .period {
   padding-top: 1.4vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .period_left {
@@ -831,22 +862,25 @@ section {
 
 .period_left>span {
   font-size: 1vw;
-  font-family: 'F9';
+  font-family: "Noto Sans KR";
   display: flex;
   flex-direction: column;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 1.45vw;
 }
 .sec3_Rbtnbox {
   position: absolute;
-  bottom: 10vw;
+  bottom: 8vw;
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
 .sec_h5{
+ /*  margin-left: 8vw; */
+  margin-top: 1.5vw;
   font-size: 1vw;
-  font-family: 'F9';
+  font-family: "Noto Sans KR";
+  font-weight: 600;
   width: 26vw;
   line-height: 1.5vw;
 }
@@ -919,7 +953,8 @@ section {
 
 .sec4Lbox_tbox .title h2 {
   font-size: 2vw;
-  font-family: "TT";
+  font-family: "Noto Sans KR";
+  font-weight: 700;
   margin-top: 1vw;
 }
 
@@ -934,7 +969,7 @@ section {
 .sec4Lbox_tbox .period .period_left,
 .sec4Lbox_tbox .svt,
 .sec4Lbox_tbox .title h2 {
-  margin-left: 8vw;
+/*   margin-left: 8vw; */
 }
 
 /* //섹션4 L */
@@ -1088,12 +1123,13 @@ section {
 
 .sec5rbox_tbox .title h2 {
   font-size: 2vw;
-  font-family: "TT";
+  font-family: "Noto Sans KR";
+  font-weight: 600;
   margin-top: 1vw;
 }
 .sec5_Rbtnbox {
   position: absolute;
-  bottom: 10vw;
+  bottom: 9vw;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -1364,9 +1400,8 @@ section {
 }
 
 
-@media screen and (max-width: 640px) {
-  .footer {
-    width: 100%;
-    height: 60vw;
-  }
+
+
+.o{
+display: none;
 }

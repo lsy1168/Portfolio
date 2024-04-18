@@ -1,0 +1,570 @@
+@media screen and (max-width: 800px) {
+
+
+    header:before,
+header:after {
+  transform: rotate(0deg);
+  position: absolute;
+  content: "";
+  height: 98vw;
+  width: 150vw;
+  border-radius: 0px;
+  top: -0vw;
+  left: -0vw;
+}
+header:after {
+    background-color: #481bdd;
+    z-index: -2;
+    box-shadow: -0px 0px 0px 0px rgba(237, 237, 237, 1);
+  }
+    header {
+        width: 100%;
+        height: 100vw;
+    }
+    .btn p {
+        font-family: "Noto Sans KR";
+        font-size: 3vw;
+        font-weight: 500;
+      }
+      .left .row2 {
+        margin-top: 2vw;
+    }
+    .w1700 {
+        margin: auto;
+        max-width: 800px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .sd {
+        width: 25vw;
+    }
+    .banner {
+        width: 100%;
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        height: 78vw;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .logo1 {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .left {
+        width: 100%;
+        height: 60vw;
+    }
+
+    .header_gnb {
+        width: 70vw;
+        transition: 0.3s;
+        height: 10vw;
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 13%;
+        background: rgba(41, 27, 131, 0.7);
+        flex-direction: row;
+        justify-content: space-evenly;
+        border-radius: 0vw 0 1vw 1vw;
+        z-index: 999;
+        backdrop-filter: blur(10px);
+    }
+
+    .dep1 {
+        margin-left: 0vw;
+        text-align: center;
+        font-size: 2.8vw;
+        width: 50%;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0;
+    }
+
+    .left .row {
+        box-sizing: border-box;
+        font-size: clamp(10vw, 8vw, 100%);
+        height: 15vw;
+        line-height: 13vw;
+        font-family: "TT";
+    }
+    .scroll,
+    .scroll2,
+    .scroll3 {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .sd {
+
+        font-size: 8vw;
+
+    }
+
+    .sd::after {
+        display: none;
+    }
+
+    .btn {
+        font-weight: 600;
+        font-size: 3vw;
+        position: relative;
+        padding: 2vw 3vw;
+        border-radius: 50px;
+    }
+
+    .txt {
+        display: flex;
+        font-size: 13vw;
+        font-family: TT;
+        white-space: nowrap;
+        background: rgba(255, 255, 255, 0);
+    }
+
+    .o {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section {
+    padding: 0 1vw;
+    }
+    .section1 {
+        margin-top: 5vw;
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+    }
+    .section1 > div {
+        width: 100%;
+    }
+    .right {
+        height: 60vw;
+    }
+    .right_Circle {
+        background-color: #8624fdea;
+        width: 60vw;
+        height: 60vw;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        margin-top: 0vw;
+    }
+    .section1_right_top {
+        margin-top: 3vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: auto;
+    }
+    .section1_title h2 {
+        font-size: 7vw;
+        font-family: "TT";
+        font-weight: 800;
+    }
+    .section1_p {
+        margin-top: 3vw;
+        width: 100%;
+        color: rgb(30, 30, 30);
+        font-size: 5vw;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 175%;
+        text-align: center;
+        font-family: "Noto Sans KR";
+        font-weight: 600;
+}
+.section1_p > br{
+    display: none;
+}
+.section1_right_bottom_text h2 {
+    font-family: "Noto Sans KR";
+    font-weight: 500;
+    top: -100%;
+    color: #000;
+    font-size: 3.5vw;
+
+}
+.section1_right_bottom_bar {
+    
+    width: 85%;
+    height: 4.5vw;
+    margin-top: 8vw;
+}
+.section1_right_bottom_text p {
+    font-family: "Noto Sans KR";
+    font-weight: 500;
+    top: -100%;
+    color: #000;
+    font-size: 3.5vw;
+}
+.section2 {
+    margin-top: 5vw;
+    height: 100vw;
+    overflow: hidden;
+}
+.sec2_title {
+    margin-left: 5vw;
+    font-size: 8vw;
+    font-weight: 600;
+    font-family: TT;
+    padding-bottom: 0vw;
+}
+.sec2_box {
+    margin-top: 5vw;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+.sec2_box .box {
+    width: 100%;
+    height: 40vw;
+    padding: 0vw;
+    background: linear-gradient(90deg, #2b1bdded 0%, #481bdd56 100%);
+    border-radius: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box_L span,.box_R span {
+    margin-left: 5vw;
+    font-family: "Noto Sans KR";
+    font-weight: 600;
+    font-size: 3.5vw;
+}
+.box_L h3,.box_R h3 {
+    margin-left: 5vw;
+    font-family: "Noto Sans KR";
+    font-weight: 600;
+    font-size: 6vw;
+}
+.section3 {
+    padding: 0;
+    margin-top: 5vw;
+    height: 158vw;
+}
+.sec3_title {
+    margin-left: 5vw;
+    font-size: 8vw;
+}
+.sec3 {padding: 0;
+    margin-top: 5vw;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+}
+.sec3_left {
+    padding: 0vw 3vw 0vw 3vw;
+    width: 94%;
+    height: auto;
+    transition: left 1s ease-in-out;
+}
+.sec3_mockup {
+    width: 100%;
+    height: min(30rem, 100%);
+    z-index: 3;
+    height: 70vw;
+    position: relative;
+}
+.sec3_mockup .sec3_mask {
+    background-color: rgb(255, 255, 255);
+    width: 98%;
+    height: 63vw;
+    z-index: 999999;
+    overflow: hidden;
+    top: 4.5%;
+    left: 1.5%;
+}
+.sec3_right {
+    height: 65vw;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.sec3_rnumber{
+    display: none;
+}
+.sec3_rbox {
+    width: 100%;
+    height: 40vw;
+    padding: 2.5vw;
+    top: 5vw;
+    left: 4vw;
+}
+.sec3rbox_tbox {
+    margin-left: 4vw;
+}
+.svt {
+    font-size: 2vw;
+}
+.sec3rbox_tbox .title h2 {
+    font-size: 5vw;
+    font-family: 'TT';
+    margin-top: 2vw;
+}
+.period {
+    width: 100%;
+    padding-top: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+.period_left {
+    width: 100%;
+    margin-right: 0vw;
+    display: flex;
+}
+.period_left>span {
+    font-size: 2.5vw;
+    margin-right: 2vw;
+}
+.sec3_Rbtnbox {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background: #d5d5d5;
+}
+.sec_h5 {
+  /*   margin-left: 8vw; */
+    margin-top: 1.5vw;
+    font-size: 3vw;
+    font-family: 'F9';
+    width: 90%;
+    line-height: 4vw;
+}
+#x {
+    display: none;
+}
+.x {
+    display: none;
+}
+.section4 {
+    overflow: hidden;
+    margin-top: 0vw;
+    width: 100%;
+    height: 158vw;
+    padding: 0;
+}
+.sec4 {
+    padding: 0;
+    margin-top: 5vw;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+}
+.sec4_right {
+    padding: 0vw 3vw 0vw 3vw;
+    width: 94%;
+    height: auto;
+    transition: left 1s ease-in-out;
+}
+.sec4_mockup {
+    width: 100%;
+    z-index: 3;
+    height: 70vw;
+    position: relative;
+}
+.sec4_mockup .sec4_mask {
+    background-color: rgb(255, 255, 255);
+    width: 98%;
+    height: 63vw;
+    z-index: 999999;
+    overflow: hidden;
+    top: 4.5%;
+    left: 1.5%;
+}
+.sec4_left {
+    height: 65vw;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.sec4_Lnumber{
+    display: none;
+}
+.sec4Lbox_tbox .period .period_left,
+.sec4Lbox_tbox .svt,
+.sec4Lbox_tbox .title h2 {
+  margin-left: 10vw;
+}
+.sec4_Lbox {
+    width: 100%;
+    height: 50vw;
+    padding: 2.5vw;
+    top: 5vw;
+    left: -8vw;
+}
+.sec4_Lbtnbox {
+    position: absolute;
+    bottom: -10vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.sec4Lbox_tbox {
+    margin-left: 0vw;
+    margin-right: 4vw;
+}
+.sec4Lbox_tbox .title h2 {
+    font-size: 5vw;
+    margin-top: 2vw;
+}
+.sec4Lbox_tbox >.period >.sec_h5{
+    margin-left: 10vw;
+    margin-top: 0vw;
+    font-size: 3vw;
+    font-family: 'F9';
+    width: 90%;
+    line-height: 4vw;
+}
+
+.section5 {
+    padding: 0;
+    margin-top: 0vw;
+    height: 158vw;
+}
+.sec5 {
+    padding: 0;
+    margin-top: 5vw;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+}
+.sec5_left {
+    padding: 0vw 3vw 0vw 3vw;
+    width: 94%;
+    height: auto;
+    transition: left 1s ease-in-out;
+}
+.sec5_mockup {
+    width: 100%;
+    z-index: 3;
+    height: 70vw;
+    position: relative;
+}
+.sec5_mockup .sec5_mask {
+    background-color: rgb(255, 255, 255);
+    height: 63vw;
+}
+.sec5_right {
+    height: 65vw;
+    width: 100%;
+    position: relative;
+}
+.sec5rbox_tbox .title h2 {
+    font-size: 5vw;
+    font-family: "Noto Sans KR";
+    font-weight: 700;
+    margin-top: 2vw;
+}
+.sec5_rnumber {
+display: none;
+}
+.sec5_rbox {
+    width: 100%;
+    height: 40vw;
+    padding: 2.5vw;
+    top: 5vw;
+    left: 4vw;
+}
+.sec5rbox_tbox {
+    margin-left: 4vw;
+}
+.sec5_Rbtnbox {
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+    height: 90vw;
+}
+.footer_main {
+    width: 92%;
+    height: 75vw;
+}
+.footer_main::before {
+    top: 2%;
+    width: 98%;
+    height: 76vw;
+}
+.ft_circle {
+    margin-top: 10vw;
+    width: 55vw;
+    height: 55vw;
+    margin-left: 21vw;
+}
+.footer_main h2 {
+    margin-top: 7vw;
+    margin-left: 8.5vw;
+    font-size: 5.5vw;
+}
+.footer_main .p1 {
+    text-align: center;
+    margin-top: 2vw;
+    width: 90%;
+    font-size: 3.5vw;
+    margin-left: 3vw;
+}
+.footer_main .p2 {
+    text-align: center;
+    margin-top: 1vw;
+    width: 90%;
+    font-size: 3vw;
+    margin-left: 2vw;
+}
+.ft_ikbox {
+    margin-top: 1vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.ft_ik1, .ft_ik2 {
+    margin-top: 1vw;
+    height: 3vw;
+}
+.ft_ik1 img, .ft_ik2 img {
+    width: 3vw;
+    height: 3vw;
+}
+.ft_ik1 > a, .ft_ik2 > a {
+    font-size: 2vw;
+    line-height: 2vw;
+    text-decoration: none;
+    color: #000;
+    margin-left: 0.5vw;
+}
+.ft_circle .row {
+    margin-top: 5vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.ft_circle .row .btn {
+    font-weight: 600;
+    font-size: 2vw;
+    position: relative;
+    padding: 2vw 3vw;
+    border-radius: 50px;
+}
+}

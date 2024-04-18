@@ -99,6 +99,7 @@ function pipScroll() {
 	});
 }
 
+
 /* 마우스효과 */
 /* const el = document.querySelector(".followAnimation");
 let mouseX = 0;
@@ -142,10 +143,10 @@ window.onscroll = function () {
 
 	
 	//sec1 L
-	if(width >= 1000){
+	if(width >= 800){
 		if(height >= 1000){
 			sec1Title.style.opacity = 1;
-			sec1Title.style.transform = 'translate(5%, 0)';
+			sec1Title.style.transform = 'translate(0%, 0)';
 		}else{
 			sec1Title.style.opacity = 0;
 			sec1Title.style.transform = 'translate(-100%, 0)';
@@ -153,14 +154,14 @@ window.onscroll = function () {
 	}else{
 		if(height >= 100){
 			sec1Title.style.opacity = 1;
-			sec1Title.style.transform = 'translate(5%, 0)';
+			sec1Title.style.transform = 'translate(0%, 0)';
 		}else{
 			sec1Title.style.opacity = 0;
 			sec1Title.style.transform = 'translate(-100%, 0)';
 		}
 	}
 	//sec1 R
-	if(width >= 1000){
+	if(width >= 800){
 		if(height >= 1000){
 			sec2Title.style.opacity = 1;
 			sec2Title.style.transform = 'translate(0, 0)';
@@ -178,8 +179,8 @@ window.onscroll = function () {
 		}
 	}
 	//sec2 L
-	if(width >= 1000){
-		if(height >= 2000){
+	if(width >= 800){
+		if(height >= 1500){
 			sec3Title.style.opacity = 1;
 			sec3Title.style.transform = 'translate(0, 0)';
 		}else{
@@ -196,8 +197,8 @@ window.onscroll = function () {
 		}
 	}
 	//sec2 R
-	if(width >= 1000){
-		if(height >= 2000){
+	if(width >= 800){
+		if(height >= 1500){
 			sec4Title.style.opacity = 1;
 			sec4Title.style.transform = 'translate(0, 0)';
 		}else{
@@ -214,8 +215,8 @@ window.onscroll = function () {
 		}
 	}
 	//sec2 B
-	if(width >= 1000){
-		if(height >= 2100){
+	if(width >= 800){
+		if(height >= 1700){
 			sec10Title.style.opacity = 1;
 			sec10Title.style.transform = 'translateY(0)';
 		}else{
@@ -232,8 +233,8 @@ window.onscroll = function () {
 		}
 	}
 	//sec3 R
-	if(width >= 1000){
-		if(height >= 3300){
+	if(width >= 800){
+		if(height >= 2300){
 			sec5Title.style.opacity = 1;
 			sec5Title.style.transform = 'translate(0, 0)';
 		}else{
@@ -250,8 +251,8 @@ window.onscroll = function () {
 		}
 	}
 	//sec4 L
-	if(width >= 1000){
-		if(height >= 4300){
+	if(width >= 800){
+		if(height >= 2900){
 			sec6Title.style.opacity = 1;
 			sec6Title.style.transform = 'translate(0, 0)';
 		}else{
@@ -268,8 +269,8 @@ window.onscroll = function () {
 		}
 	}
 	//sec5 R
-	if(width >= 1000){
-		if(height >= 5300){
+	if(width >= 800){
+		if(height >= 3800){
 			sec7Title.style.opacity = 1;
 			sec7Title.style.transform = 'translateY(0)';
 		}else{
@@ -286,8 +287,8 @@ window.onscroll = function () {
 		}
 	}
 	//sec6 L
-	if(width >= 1000){
-		if(height >= 6400){
+/* 	if(width >= 800){
+		if(height >= 4600){
 			sec8Title.style.opacity = 1;
 			sec8Title.style.transform = 'translate(0, 0)';
 		}else{
@@ -302,10 +303,10 @@ window.onscroll = function () {
 			sec8Title.style.opacity = 0;
 			sec8Title.style.transform = 'translate(200%, 0)';
 		}
-	}
+	} */
 	//ft
-	if(width >= 1000){
-		if(height >= 7200){
+	if(width >= 800){
+		if(height >= 5200){
 			sec9Title.style.opacity = 1;
 			sec9Title.style.transform = 'translateY(0)';
 		}else{
