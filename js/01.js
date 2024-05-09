@@ -124,6 +124,8 @@ function tick() {
 /* transform:translate(-50%,-50%) */
 
 /* 프로필 효과 */ /* Education 효과 */  //스크롤 효고ㅏ
+
+
 window.onscroll = function () {
 	let height = window.pageYOffset; //스크롤 높이
 	let width = window.innerWidth; // 스크린 넓이
@@ -233,7 +235,7 @@ window.onscroll = function () {
 		}
 	}
 	//sec3 R
-	if(width >= 800){
+	/* if(width >= 800){
 		if(height >= 2300){
 			sec5Title.style.opacity = 1;
 			sec5Title.style.transform = 'translate(0, 0)';
@@ -249,9 +251,9 @@ window.onscroll = function () {
 			sec5Title.style.opacity = 0;
 			sec5Title.style.transform = 'translate(100%, 0)';
 		}
-	}
+	} */
 	//sec4 L
-	if(width >= 800){
+	/* if(width >= 800){
 		if(height >= 2900){
 			sec6Title.style.opacity = 1;
 			sec6Title.style.transform = 'translate(0, 0)';
@@ -267,9 +269,9 @@ window.onscroll = function () {
 			sec6Title.style.opacity = 0;
 			sec6Title.style.transform = 'translate(-100%, 0)';
 		}
-	}
+	} */
 	//sec5 R
-	if(width >= 800){
+	/* if(width >= 800){
 		if(height >= 3800){
 			sec7Title.style.opacity = 1;
 			sec7Title.style.transform = 'translateY(0)';
@@ -285,7 +287,7 @@ window.onscroll = function () {
 			sec7Title.style.opacity = 0;
 			sec7Title.style.transform = 'translateY(-150%)';
 		}
-	}
+	} */
 	//sec6 L
 /* 	if(width >= 800){
 		if(height >= 4600){
@@ -305,7 +307,7 @@ window.onscroll = function () {
 		}
 	} */
 	//ft
-	if(width >= 800){
+	/* if(width >= 800){
 		if(height >= 5200){
 			sec9Title.style.opacity = 1;
 			sec9Title.style.transform = 'translateY(0)';
@@ -321,7 +323,7 @@ window.onscroll = function () {
 			sec9Title.style.opacity = 0;
 			sec9Title.style.transform = 'translateY(100%)';
 		}
-	}
+	} */
 };
 
 const ani = bodymovin.loadAnimation({
@@ -374,4 +376,9 @@ const fk_ani = bodymovin.loadAnimation({
 	autoplay: true,
 	path: './json/Firecracker.json',
 });
+
+
+
+///////////////////////
+
 
