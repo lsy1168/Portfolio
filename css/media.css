@@ -135,7 +135,7 @@ header:after {
         align-items: center;
     }
     section {
-    padding: 0 1vw;
+    padding: 0 0vw;
     }
     .section1 {
         margin-top: 5vw;
@@ -209,6 +209,7 @@ header:after {
     font-size: 3.5vw;
 }
 .section2 {
+    padding: 3vw;
     margin-top: 5vw;
     height: 100vw;
     overflow: hidden;
